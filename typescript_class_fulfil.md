@@ -48,13 +48,14 @@
 ---
 Каждый метод отделяется переносом строки до и после.   
 Скобки тела функции записываются каждая на своей строке.   
-Каждый метод должен иметь тип принимаемого и возвращаемого значения
 
 ```ts 
+    // empty line before
     protected hasSubstring(str: string): boolean
     {
         // do shomething
     }
+    // empty line after
 ```
 
 Каждый метод обрабатывающий запросы по http в асинхронном режиме должен иметь модификатор async
@@ -63,6 +64,16 @@
     public async getFromServer(): void
     {
         // do shomething via http
+    }
+```
+
+Имя класса начинаетс с глагола и записывается в camelCase
+Каждый метод должен иметь тип принимаемого и возвращаемого значения
+
+```ts 
+    public async doSomthingPrettyUsual(): void
+    {
+        // do anything
     }
 ```
 
