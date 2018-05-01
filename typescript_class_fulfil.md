@@ -71,7 +71,7 @@
 Каждый метод должен иметь тип принимаемого и возвращаемого значения
 
 ```ts 
-    public async doSomthingPrettyUsual(): void
+    public async doSomthingPrettyUsual(num: number, pack: object[]): UserClass
     {
         // do anything
     }
