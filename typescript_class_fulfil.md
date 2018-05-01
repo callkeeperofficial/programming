@@ -51,7 +51,7 @@
 
 ```ts 
     // empty line before
-    protected hasSubstring(str: string): boolean
+    protected hasSubstring(varyLongString: string): boolean
     {
         // do shomething
     }
@@ -71,7 +71,7 @@
 Каждый метод должен иметь тип принимаемого и возвращаемого значения
 
 ```ts 
-    public async doSomthingPrettyUsual(num: number, pack: object[]): UserClass
+    public doSomthingPrettyUsual(userId: number, propertyPack: object[]): UserClass
     {
         // do anything
     }
