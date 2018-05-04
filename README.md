@@ -5,6 +5,7 @@
 
 * [Оформление компонента](component_fulfil.md) 
 * [Оформление комментариев](comments_sctict_use.md) 
+* [Оформление тестов](test_classes_fulfil.md) 
 
 ## TypeScript
 
