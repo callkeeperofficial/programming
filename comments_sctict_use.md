@@ -128,4 +128,20 @@
     for ($i = 0; $i < 10; $i++))
 ```
 
+Для полей классов предусмотрены однострочные комментарии.
 
+```php
+    /** @var DataQueryReflect $fixture */
+    protected $fixture;
+    
+    /** @var string $sReplaceMarker */
+    public $sReplaceMarker = '.';
+```
+
+Для дополнительной ясности переменные, которые являются экземплярами классов возвращаемых 
+из других функций, подписываются строчными комментариями
+
+```php
+    /** @var FooObject $oFooObject  */
+    $oFooObject = someFunctionReturnedFooObjectTeoreticaly();
+```
