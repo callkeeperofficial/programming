@@ -3,7 +3,11 @@
 
 ## VCS
 
-* [Правила контроля версий](version_control_rules.md) 
+* [Правила контроля версий](version_control_rules.md)
+
+## SCRUM
+* [Правила работы с карточками](how_work_with_cards.md)
+* [Правила работы со SCRUM](scrum_path_for_us.md)
 
 
 ## PHP
