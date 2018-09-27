@@ -1,40 +1,58 @@
 # Ревью лист
 
-## Порядок
 ## Кодстиль
+
+* переносы строк после каждого семантического блока
+* уровень отступов соответствует сетке
+* выделение массивов, циклов и функций
+* строки не длинее 120 символов
+
 ## Файлы и паки
+
+* размещение соответствует стандарту PSR-4
+
+## Комментарии
+
+* есть краткое описание в комментариях к функциям
+* комментарии к функциям
+* комментарии к переменным
+* все входящие и выходящие параметры имеют типы
+
 ## Архитектура
+
+* понятная на словах обработка данных
+* каждая функция возвращает результат
+* нет жёстких ссылок на файлы
+* все серверные переменные наследуются из конфигов
+
+## Производительность
+
+* нет лишних переменных
+* нет вложенных циклов или их крайне мало
+* нет лишних действий над данными
+* нет избыточности данных
+
 ## Зависимости
 
-Зависимости должны находиться в компоненте в папка **dependencies** в файле **dependencies.js**
+Зависимости должны находиться в компоненте в папка **dependencies** в файле **classes.json**
 
 Шаблон выглядит примерно так.
 
 ```json
-{
-    "namespace": "app\\components\\mitrushov\\event_loop",
-    "storage": {
-      "event_ck": "event_exchange"
-    },
-    "composer": {
-        "php": ">=5.4.0",
-        "yiisoft/yii2": "~2.0.5",
-        "yiisoft/yii2-gii": "~2.0.0",
-        "raveren/kint": "^1.0",
-        "nesbot/carbon": "^1.21",
-        "phpunit/phpunit": "^5.7.21"
-    },
-    "classes": {
-      "CoreArrayProcessor": "app\\components\\common\\core_array_processor\\CoreArrayProcessor",
-      "HandleErrors": "app\\components\\common\\entities\\HandleErrors",
-      "ReturnStatement": "app\\components\\common\\statement\\ReturnStatement",
-      "EventList": "app\\components\\mitrushov\\event_loop\\interfaces\\EventList",
-      "SharedConfig": "app\\components\\mitrushov\\shared_config\\SharedConfig",
-      "EventExchange": "app\\models\\EventExchange",
-      "Exception": "\\Exception",
-      "Yii": "\\Yii",
-      "Carbon": "Carbon\\Carbon"
-    }
-}
+[
+   "app\\components\\common\\core_array_processor\\CoreArrayProcessor",
+   "app\\components\\common\\entities\\HandleErrors",
+   "app\\components\\common\\statement\\ReturnStatement",
+   "app\\components\\mitrushov\\event_loop\\interfaces\\EventList",
+   "app\\components\\mitrushov\\shared_config\\SharedConfig",
+   "app\\models\\EventExchange",
+   "\\Exception",
+   "\\Yii",
+   "Carbon\\Carbon"
+]
 ```
+
+
 ## Тесты
+
+Наличие хотя бы одно теста
