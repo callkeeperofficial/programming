@@ -12,6 +12,7 @@
 ## SCRUM
 * [Правила работы с карточками](how_work_with_cards.md)
 * [Правила работы со SCRUM](scrum_path_for_us.md)
+* [Основные правила работы](essential_rules.md)
 
 
 ## PHP
